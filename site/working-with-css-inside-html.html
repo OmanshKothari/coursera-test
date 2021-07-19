@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Working with css</title>
+	<style type="text/css">
+		
+		section li {
+			list-style: none;
+		}
+
+		section li:nth-child(4){
+			font-size: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: turquoise;
+			background-color: black;
+			display: block;
+			width: 120px;
+			text-align: center;
+			border: 1px dotted royalblue;
+			margin-bottom: 2px;
+		}
+
+		#Website-name {
+			font-size: 50px;
+			width: 500px;
+			text-align: center;
+			font-family: fantasy;
+			background-color: aqua;
+			font-style: bold;
+			color: crimson;
+			border: dotted crimson;
+		}
+
+		a:hover, a:active {
+			background-color: greenyellow;
+			color: crimson;
+		}
+
+		.main-content > div:nth-child(odd) {
+			background-color: dimgray;
+			text-align: center;
+			color: yellow;
+			margin-bottom: 12px;
+		}
+
+		.main-content > div {
+			background-color: aqua;
+			color: palevioletred;
+			text-align: center;  
+			margin-bottom: 12px;
+			align-self: center;
+		}
+
+		.main-content div:nth-child(even) {
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<h1 id="Website-name">Blood Bank System</h1>
+		<nav id="nav-pane">
+			<ul id="Main-Navigation">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a>Sign Up</a></li>
+				<li><a>Know More</a></li>
+				<li><a>Camps around you</a></li>
+				<li><a>Request Blood</a></li>	
+			</ul>
+		</nav>
+	</section>
+
+	<section class="main-content">
+		<div>Div1</div>
+		<div>Div2</div>
+		<div>Div3</div>
+		<div>Div4</div>
+		<div>Div5</div>
+		<div>Div6</div>
+		<div>Div7</div>
+
+	</section>
+	
+</body>
+</html>

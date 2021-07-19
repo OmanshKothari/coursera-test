@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<!-- defaut box size is extra [border width + padding] as the width we set for box is actually the width of the CONTENT_BOX by default --> 
+
+<!-- Just like default content-box there are also default MARGINS AND PADDINGS -->
+
+<!-- Cumulative margin: When there are elements with margin right and margin right side by side eah other they get add up.
+
+Margin Collapse : When the elements are on top of each other the bigger of the margin among the two is kept and the other one COLLAPSES -->
+
+<!-- none value did not override the deafult browser margin -->
+
+<!-- OVERFLOW -when the box size is not large enough the extra content might OVERFLOW will span outside of the box.
+
+"overflow" Property of elements can be used to deal with these situation
+
+1. You can chose to clip[do not show] those content by using 
+	overflow: hidden; 
+2. You can chose to automatically add a scroll bar so that the user can scroll through the content with the content still inside the box.
+	overfow: auto;
+3. You can chose to add the scrollbar manually too.
+	overflow: scroll;-->
+
+<head>
+	<meta charset="utf-8">
+	<title>The Box Model</title>
+	<style type="text/css">
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: auto;
+	}
+
+	body {
+		background-color: dimgray;
+	}
+
+	.box {
+		background-color: blue;
+		padding: 10px;
+		border: 5px solid black;
+		margin: 40px;
+		width: 300px;
+		text-align: center;
+	}
+
+	.content {
+		background-color: teal;
+	}
+
+	</style>
+
+
+</head>
+<body>
+
+	<h1 style="text-align: center;">We are checking the Box-Model.</h1>
+
+	<div class="box">
+		<div class="content">
+			The text represent the content.
+		</div>
+	</div>
+
+	<h2 style="text-align: center;">Check for Overflow</h2>
+	<div class="box">
+		<div class="content" style="height: 100px;">
+			The text represent the content of the box that will be made to overflow. Let us see how the auto scroll will react. Hope all goes well. :)
+
+			The text represent the content of the box that will be made to overflow. Let us see how the auto scroll will react. Hope all goes well. :)
+
+			The text represent the content of the box that will be made to overflow. Let us see how the auto scroll will react. Hope all goes well. :)
+		</div>
+	</div>
+
+</body>
+</html>

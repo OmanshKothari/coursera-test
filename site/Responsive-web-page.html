@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>This is a Responsive Page</title>
+        <meta charset="utf-8">
+        
+        <!-- This link below will be connected to the bootstrap css stylesheet. -->
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+        <!-- This link will be used to relate OUR stylesheet which will be used to override the properties of 
+        bootstrap if we do not wnat them-->
+        <link rel="stylesheet" href="our-stylesheet.css">
+
+        <!-- This will connect the google font which we want to assosciate with the file.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet" type="text/css">
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <!-- Here are the javascripts that will be [probably]
+        used in the file-->
+
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/jquery-3.6.0.min.js"></script>
+
+        <!-- Here we will be adding a script to override any default which we do not want in our file.-->
+        <script src="our-script.js"></script>
+
+        <!-- Creating the navigation bar for website
+        header -> nav -> container -> row -> columns[defines the grid (12 grid used)]
+    
+        Normal "container" class changes the width according to the browser
+        while "container-fluid" spans all over to the edge of the browser-->
+        <header>
+            <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                                                 
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>

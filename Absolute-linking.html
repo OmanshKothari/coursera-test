@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Relative Positioning in Html</title>
+        <style>
+
+            * {
+                box-sizing: border-box;
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .box {
+                background-color: rgba(0, 128, 75, 0.911);
+                border: 3px solid rgb(31, 31, 87);
+                width: auto;
+                height: auto;
+                padding: 7px;
+                margin: 5px;
+                position: relative;
+            }
+
+            .content {
+                background-color: darkgray;
+                width: 25%;
+                height: auto;
+            }
+
+            .title {
+                background-color: darkgoldenrod;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                margin: 10px;
+                width: auto;
+                height: 75px;
+            }
+
+            p {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .title .content {
+                width: auto;
+                height: 50px;
+            }
+
+            #BOX1 {
+                position: relative;
+                top: 55px;
+                left: 55px;
+            }
+
+            #BOX2 {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+            }
+
+            a:link a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: black;
+                color: chartreuse;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="box title">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 150%;">
+                Before Relative Positioning
+                </h1>
+            </div>
+        </div>
+        <div class =box style="background-color: darkturquoise;">
+            <p style="background-color: deeppink;">BOX 1</p>
+            <p style="background-color: purple;">BOX 2</p>
+            <p style="background-color: green;">BOX 3</p>
+            <p style="background-color: crimson;">BOX 4</p>
+        </div> 
+        <div class="box title">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 150%;">
+                 After Relative Positioning
+                </h1>
+            </div>
+        </div>
+        <div class =box style="background-color: darkturquoise;">
+            <p id="BOX1" style="background-color: deeppink;">BOX 1</p>
+            <p style="background-color: purple;">BOX 2</p>
+            <p style="background-color: green;">BOX 3</p>
+            <p style="background-color: crimson;">BOX 4</p>
+        </div>  
+        <div class="box title">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 150%;">
+                 After Absolute Positioning
+                </h1>
+            </div>
+        </div>
+        <div class =box style="background-color: darkturquoise;">
+            <p id="BOX1" style="background-color: deeppink;">BOX 1</p>
+            <p id="BOX2" style="background-color: purple;">BOX 2</p>
+            <p style="background-color: green;">BOX 3</p>
+            <p style="background-color: crimson;">BOX 4</p>
+        </div>  
+        
+        <div class="box title">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 150%;">
+                    <a href="background-property.html">
+                        Go Back To background-property.html
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </body>
+</html>

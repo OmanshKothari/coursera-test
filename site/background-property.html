@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>background-property-implementation.html</title>
-</head>
-<body>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
+		body {
+			background-image: url("background.png");
+		}
+
+		.box {
+			background-color: springgreen;
+			border: 1px solid blue;
+			width: auto;
+			height: auto;
+			margin: 20px;
+		}
+
+		p {
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="content">
+			This is the title of the page i am creating.
+		</div>
+	</div>
+	<div class="box">
+		<div class="content">
+			<p style="width: 50%; background-color: burlywood; float: right;">P block</p>
+			<p style="width: 50%; background-color: chartreuse; float: left">hi there this is another p block</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="content">
+			This is the title of the page i am creating.
+			<p style="width: 50%; background-color: burlywood; float: right;">P block</p>
+			<p style="width: 50%; background-color: chartreuse;">hi there this is another p block</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="content">
+			This is the title of the page i am creating.
+			<p style="width: 50%; background-color: burlywood; float: right;">P block</p>
+			<p style="width: 50%; background-color: chartreuse;">hi there this is another p block</p>
+		</div>
+	</div>
 </body>
+
 </html>

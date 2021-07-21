@@ -3,53 +3,86 @@
     <head>
         <title>This is a Responsive Page</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width intial-scale=1">
         
         <!-- This link below will be connected to the bootstrap css stylesheet. -->
-        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- This link will be used to relate OUR stylesheet which will be used to override the properties of 
         bootstrap if we do not wnat them-->
-        <link rel="stylesheet" href="our-stylesheet.css">
+        <link rel="stylesheet" href="our-style.css">
 
         <!-- This will connect the google font which we want to assosciate with the file.-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+        <!--This is the font that will be used for Brand Name-->
+        <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,200&family=Zen+Loop&display=swap" rel="stylesheet">
 
         <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
+
+            body {
+                font-size: 20px;
+                font-family: 'Zen Loop', cursive;
             }
 
+            #header-nav {
+                background-color: goldenrod;
+                border-radius: 0%;
+                border: 0;
+            }
 
+            #logo {
+                width: 115px;
+                height: 115px;
+                margin: 0;
+            }
+            .navbar-brand {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: 1px 1px 1px #222;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: .75;
+            }
+
+            .navbar-brand p {
+                padding-top: 5px;
+            }
+
+            .navbar-brand h1 {
+                font-size: 1.75em;
+            }
+
+            .navbar-brand a:hover, .navbar-brand a:focus ,.navbar-brand a:visited {
+                text-decoration: none;
+            }
             
-
         </style>
     </head>
-    <body>
+    <body style="background-image: url('body-background.png');">
         <!-- Here are the javascripts that will be [probably]
         used in the file-->
 
-        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-        <script src="bootstrap-5.0.2-dist/js/jquery-3.6.0.min.js"></script>
-
-        <!-- Here we will be adding a script to override any default which we do not want in our file.-->
-        <script src="our-script.js"></script>
-
-        <!-- Creating the navigation bar for website
-        header -> nav -> container -> row -> columns[defines the grid (12 grid used)]
-    
-        Normal "container" class changes the width according to the browser
-        while "container-fluid" spans all over to the edge of the browser-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--
+            The visible class and the hidden class is updated to d class 
+            you can use d-none d-md-block d-lg-none to siplay in only medium devices and so on.
+        -->
         <header>
-            <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div>
-                                                 
+            <nav id="header-nav" class="navbar navbar-nav" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header justify-content-center">
+
+                        <a href="Responsive-web-page.html" class="float-left d-none d-md-block d-lg-block"><div id="logo"><img src="the-geek-om.png" class="img-thumbnail rounded-circle"></div></a> 
+                        <div class="navbar-brand">
+                            <a href="Responsive-web-page.html"><h1>Omansh Kothari</h1></a>
+                            <p>Student: B.Tech. CSE [1954302020]</p>
                         </div>
+                           
                     </div>
                 </div>
             </nav>
